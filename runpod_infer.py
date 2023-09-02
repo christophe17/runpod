@@ -88,7 +88,8 @@ def generator(job):
     scipy.io.wavfile.write(output, rate=sample_rate, data=audio_array)
     output.seek(0)
 
-    return Response(output, content_type="audio/wav")
+    return 'Done'
+    # return Response(output, content_type="audio/wav")
     # scipy.io.wavfile.write("bark_out.wav", rate=sample_rate, data=audio_array)
 
 
